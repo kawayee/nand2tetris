@@ -1,0 +1,20 @@
+function Main.main 1
+    push local 0
+    pop local 0
+    push local 0
+    call SquareGame.run 1
+    pop temp 0
+    push local 0
+    call SquareGame.dispose 1
+    pop temp 0
+    push constant 0
+    return
+function Main.more 1
+    push local 0
+    not
+    if-goto Main_1
+    goto Main_0
+label Main_1
+label Main_0
+    push constant 0
+    return
